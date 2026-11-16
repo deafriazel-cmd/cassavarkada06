@@ -4289,3 +4289,139 @@ button {
     transform: rotate(var(--tilt, 0deg));
   }
 }
+
+/* Trial balance */
+.trial {
+  background: var(--sand);
+  color: var(--ink);
+  padding: 2.5rem 1rem 3rem;
+}
+.dayone--follow + .trial {
+  padding-top: 1rem;
+}
+.trial__inner {
+  width: min(100%, calc(var(--wrap) * 0.7));
+  margin: 0 auto;
+}
+.trial__head {
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.1rem;
+  display: flex;
+}
+.trial__title {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  color: var(--red);
+  font-size: clamp(1.5rem, 5.5vw, 2.6rem);
+  font-weight: 400;
+  line-height: 1;
+}
+.trial__lead {
+  color: color-mix(in srgb, var(--ink) 78%, transparent);
+  font-size: 0.88rem;
+}
+.trial__sheet {
+  background: var(--cream);
+  border: 2px solid var(--ink);
+  border-radius: 1rem;
+  padding: 1.6rem 0.9rem 0.9rem;
+  position: relative;
+  overflow-x: auto;
+  box-shadow: 4px 4px 0 var(--ink);
+}
+.trial__hole {
+  background: var(--sand);
+  border: 2px solid var(--ink);
+  border-radius: 50%;
+  width: 0.8rem;
+  height: 0.8rem;
+  position: absolute;
+  top: 0.45rem;
+}
+.trial__hole--left {
+  left: 22%;
+}
+.trial__hole--right {
+  right: 22%;
+}
+.trial__table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 19rem;
+  font-variant-numeric: tabular-nums;
+}
+.trial__table thead th {
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--red);
+  border-bottom: 2px solid var(--ink);
+  padding: 0.4rem 0.4rem 0.55rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-align: left;
+}
+.trial__table tbody th,
+.trial__table tfoot th {
+  text-align: left;
+  padding: 0.55rem 0.4rem;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+.trial__table td {
+  padding: 0.55rem 0.4rem;
+  font-size: 0.88rem;
+}
+.trial__table tbody tr {
+  border-bottom: 1px dashed color-mix(in srgb, var(--ink) 28%, transparent);
+}
+.trial__table tbody tr:nth-child(even) {
+  background: color-mix(in srgb, var(--red) 6%, transparent);
+}
+.trial__table .trial__num {
+  text-align: right;
+  white-space: nowrap;
+}
+.trial__table tbody td:not(:has(.sr-only)) {
+  font-weight: 600;
+}
+.trial__table tbody td:has(.sr-only) {
+  color: color-mix(in srgb, var(--ink) 40%, transparent);
+}
+.trial__table tfoot tr {
+  border-top: 2px solid var(--ink);
+}
+.trial__table tfoot th {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding-top: 0.8rem;
+  font-size: 1.05rem;
+  font-weight: 400;
+}
+.trial__total {
+  color: var(--red);
+  border-bottom: 4px double var(--ink);
+  padding: 0.8rem 0 0.1rem;
+  font-weight: 700;
+  display: inline-block;
+}
+.trial__note {
+  color: var(--red);
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 0.9rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: flex;
+}
+@media (min-width: 640px) {
+  .trial__sheet {
+    padding: 1.9rem 1.6rem 1.3rem;
+  }
+  .trial__table tbody th,
+  .trial__table td {
+    padding-block: 0.7rem;
+    font-size: 1rem;
+  }
+}
