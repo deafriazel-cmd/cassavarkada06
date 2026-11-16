@@ -144,4 +144,40 @@ export const DAY_RECORDS: DayRecord[] = [
       },
     ],
   },
+  {
+    day: 4,
+    sectionId: 'day-four',
+    titleId: 'dayfour-title',
+    chartTitleId: 'chart-title-day-four',
+    idPrefix: 'dayfour',
+    lead: 'Our fourth selling day: a fresh batch of Dynamite sold out, and another full round of Nachos Salad, with every peso spent and earned.',
+    products: [
+      {
+        slug: 'dynamite',
+        name: 'Dynamite',
+        image: '/img/dynamite.jpg',
+        sales: 330,
+        expenses: 150,
+        stats: [
+          { label: 'Total Expenses', value: '₱150' },
+          { label: 'Total Pieces Made', value: '50 pcs' },
+          { label: 'Total Pieces Sold', value: '50 pcs' },
+          { label: 'Total Sales', value: '₱330', sales: true },
+        ],
+      },
+      {
+        slug: 'nachos',
+        name: 'Nachos Salad',
+        image: '/img/nachos-salad.jpg',
+        sales: 600,
+        expenses: 335,
+        stats: [
+          { label: 'Total Expenses', value: '₱335' },
+          { label: 'Total Orders Made', value: '20 orders' },
+          { label: 'Total Orders Sold', value: '20 orders' },
+          { label: 'Total Sales', value: '₱600', sales: true },
+        ],
+      },
+    ],
+  },
 ]

@@ -1,5 +1,6 @@
 import { DayRecord } from '@/components/site/day-record'
 import { SiteFooter } from '@/components/site/footer'
+import { Gallery } from '@/components/site/gallery'
 import { Handlers } from '@/components/site/handlers'
 import { Hero } from '@/components/site/hero'
 import { IconSprite } from '@/components/site/icon-sprite'
@@ -9,6 +10,7 @@ import { Products } from '@/components/site/products'
 import { Ribbon } from '@/components/site/ribbon'
 import { SiteNav } from '@/components/site/site-nav'
 import { Store } from '@/components/site/store'
+import { TrialBalance } from '@/components/site/trial-balance'
 import { Welcome } from '@/components/site/welcome'
 import { DAY_RECORDS } from '@/lib/day-records'
 
@@ -26,6 +28,8 @@ export default function Page() {
         {DAY_RECORDS.map((record) => (
           <DayRecord key={record.day} record={record} />
         ))}
+        <TrialBalance />
+        <Gallery />
         <Location />
         <Handlers />
       </main>
