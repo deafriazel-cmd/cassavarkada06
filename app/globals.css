@@ -4425,3 +4425,22 @@ button {
     font-size: 1rem;
   }
 }
+.trial__statements {
+  flex-direction: column;
+  gap: 2.25rem;
+  display: flex;
+}
+.trial__date {
+  font-family: var(--font-accent);
+  color: var(--ink);
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.85rem;
+  font-size: 1rem;
+  font-weight: 400;
+  display: flex;
+}
+.trial__date .ico {
+  color: var(--red);
+  font-size: 1.15rem;
+}
