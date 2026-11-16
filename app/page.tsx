@@ -1,5 +1,6 @@
 import { DayRecord } from '@/components/site/day-record'
 import { SiteFooter } from '@/components/site/footer'
+import { Gallery } from '@/components/site/gallery'
 import { Handlers } from '@/components/site/handlers'
 import { Hero } from '@/components/site/hero'
 import { IconSprite } from '@/components/site/icon-sprite'
@@ -26,6 +27,7 @@ export default function Page() {
         {DAY_RECORDS.map((record) => (
           <DayRecord key={record.day} record={record} />
         ))}
+        <Gallery />
         <Location />
         <Handlers />
       </main>
