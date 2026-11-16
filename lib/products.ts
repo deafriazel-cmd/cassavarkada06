@@ -62,8 +62,8 @@ export const PRODUCTS: Product[] = [
     id: 'dynamite',
     name: 'Dynamite',
     badge: 'Street Snack',
-    img: '/img/dynamite.jpg',
-    alt: 'Golden crispy dynamite lumpia stuffed with cheese, sili and tuna, served with dips',
+    img: '/img/products/dynamite.jpg',
+    alt: 'Golden, crispy dynamite rolls stacked in a basket lined with paper',
     detailsLabel: 'ingredients and price',
     desc: 'Crunchy wrapped rolls packed with cheese, spicy sili, and creamy tuna filling. Small bite, big kick, and perfect for sharing with your barkada. One batch is good for 100 pieces.',
     ingredients: [
