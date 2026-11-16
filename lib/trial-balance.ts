@@ -49,6 +49,20 @@ export const TRIAL_BALANCES: TrialBalanceStatement[] = [
       { account: 'Salaries Expense', debit: 1560 },
     ],
   },
+  {
+    id: 'october-2026',
+    date: 'October 16, 2026',
+    rows: [
+      { account: 'Cash', debit: 10890 },
+      { account: 'A/R', debit: 0 },
+      { account: 'Supplies', debit: 17829 },
+      { account: "Owner's Capital", credit: 1800 },
+      { account: 'Sales', credit: 30443 },
+      { account: 'Advertising Expense', debit: 460 },
+      { account: 'Utilities Expense', debit: 1384 },
+      { account: 'Salaries Expense', debit: 1680 },
+    ],
+  },
 ]
 
 export function sumColumn(rows: TrialBalanceRow[], column: 'debit' | 'credit') {
